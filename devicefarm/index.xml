@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeviceFarm Test on AWS Android Social HoL</title>
+    <link>/devicefarm/</link>
+    <description>Recent content in DeviceFarm Test on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    
+	<atom:link href="/devicefarm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>To run a remote test</title>
+      <link>/devicefarm/remote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/devicefarm/remote/</guid>
+      <description>Run the built app using a web-based remote test.
+First, create a project for your device farm.
+Select &amp;lsquo;Create a new project&amp;rsquo; and enter a Project name as appropriate.
+In the created project screen, select the &amp;lsquo;Remote access&amp;rsquo; tab and select &amp;lsquo;+ Start a new session&amp;rsquo;.
+Check the &amp;lsquo;Show available &amp;hellip;&amp;rsquo; checkbox on the device selection screen. This option selects only those devices that can afford to start up within 30 seconds.</description>
+    </item>
+    
+    <item>
+      <title>Fuzzy App Test</title>
+      <link>/devicefarm/fuzzy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/devicefarm/fuzzy/</guid>
+      <description>In this step, you will run a simple test on multiple devices using the Fuzzy test.
+⦁ To create a test project, return to the AWS Console and select Device Farm from the list of services. ⦁ Select &amp;lsquo;+Create a New project&amp;rsquo; on the screen. ⦁ In the Create project popup, enter the appropriate Project name. ⦁ You will enter the test project screen with the Success statement. And created a Device Farm project for testing your app.</description>
+    </item>
+    
+    <item>
+      <title>Sequential Testing with the Espresso Framework</title>
+      <link>/devicefarm/instrumented/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/devicefarm/instrumented/</guid>
+      <description>Perform procedural testing with the Espresso Framework
+⦁ Built-in Espresso test ⦁ Espresso is based on the built-in Android Test support library. Espresso Test Recoder, which is built into Android Studio, allows you to easily configure test presets in the order you want, and you can use it to test your apps on Device Farm.
+⦁ Return to Android studio and select Run&amp;gt; Record Espresso Test from the menu bar. ⦁ As with launching the app, a popup will appear to select the AVD.</description>
+    </item>
+    
+  </channel>
+</rss>

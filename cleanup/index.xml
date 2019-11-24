@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clean up on AWS Android Social HoL</title>
+    <link>/cleanup/</link>
+    <description>Recent content in Clean up on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    
+	<atom:link href="/cleanup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Delete resource</title>
+      <link>/cleanup/delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cleanup/delete/</guid>
+      <description>Use the following command to delete resources at once.
+amplify delete amplify push  Delete the bucket in S3 where the photo was uploaded.
+Delete the Pinpoint project.
+pinpoint&amp;gt;project&amp;gt;settings&amp;gt;General settings&amp;gt;Delete project</description>
+    </item>
+    
+  </channel>
+</rss>

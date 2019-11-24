@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android Amplify Initialization on AWS Android Social HoL</title>
+    <link>/socialapp/amplifyinstall/</link>
+    <description>Recent content in Android Amplify Initialization on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    
+	<atom:link href="/socialapp/amplifyinstall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amplify CLI Install</title>
+      <link>/socialapp/amplifyinstall/install_cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/amplifyinstall/install_cli/</guid>
+      <description>AWS Amplify makes it easy to create, configure, and implement scalable mobile and web apps based on AWS. AWS Amplify provisions and manages backends for mobile applications.
+Simply select the features you need, such as authentication, analytics, and offline data synchronization, and Amplify automatically provisions and manages the AWS services that provide each. Simply select the features you need, such as authentication, analytics, and offline data synchronization, and Amplify automatically provisions and manages the AWS services that provide each.</description>
+    </item>
+    
+    <item>
+      <title>Amplify Initialization</title>
+      <link>/socialapp/amplifyinstall/amplifyinit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/amplifyinstall/amplifyinit/</guid>
+      <description>Move to the root directory of the downloaded sample app and initialize the Amplify project.
+cd aws-android-workshop/ amplify init  Enter Enter for the project name to use default
+The environment is dev,
+The editor chooses a convenient one. ( For example, vim ).
+The OS type is Android
+For res directory, type Enter to use default.
+Choose to use AWS Profile ( Y ) and select the profile you have already created.</description>
+    </item>
+    
+  </channel>
+</rss>

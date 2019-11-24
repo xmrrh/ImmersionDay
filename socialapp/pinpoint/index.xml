@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Send Push message on AWS Android Social HoL</title>
+    <link>/socialapp/pinpoint/</link>
+    <description>Recent content in Send Push message on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    <lastBuildDate>Tue, 07 Aug 2018 08:30:11 -0700</lastBuildDate>
+    
+	<atom:link href="/socialapp/pinpoint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Firebase Cloud Messaging (FCM)</title>
+      <link>/socialapp/pinpoint/fcm-settings/</link>
+      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
+      
+      <guid>/socialapp/pinpoint/fcm-settings/</guid>
+      <description>Amazon Pinpoint uses Firebase Cloud Messaging (FCM) to send push notifications. To do this, you need to create a firebase project.
+Go to https://console.firebase.google.com/
+If you don&amp;rsquo;t have a Google account, create one and sign in if it&amp;rsquo;s signed out.
+Select Create a project. Enter a project name and press Continue to move on to the next step.
+Since this workshop will only use FCM for push message, disable Emable Google Analytics for this project and move on to the next step.</description>
+    </item>
+    
+    <item>
+      <title>Create an Amazon Pinpoint Service</title>
+      <link>/socialapp/pinpoint/amplify-pinpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/pinpoint/amplify-pinpoint/</guid>
+      <description>Now let&amp;rsquo;s create an Amazon Pinpoint service using the amplify command.
+amplify add notifications  Select FCM as the notification channel as shown below.
+ApkKey copies and pastes the server key of Cloud Messaging you created on the previous page.
+Push the created service.
+amplify push  </description>
+    </item>
+    
+    <item>
+      <title>Writing Android Code for Push Notifications  </title>
+      <link>/socialapp/pinpoint/android-pinpoint/</link>
+      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
+      
+      <guid>/socialapp/pinpoint/android-pinpoint/</guid>
+      <description>Now let&amp;rsquo;s work with the Android project to receive Push Notifications.
+First add dependencies to build.gradle (Module: Project) as shown below.
+dependencies { ... classpath &#39;com.google.gms:google-services:4.0.1&#39; ... }  Apply the plugin to build.gradle (Module: app)
+apply plugin: &#39;com.google.gms.google-services&#39;  Also add the following dependency to -build.gradle (Module: app)-in the same file.
+dependencies { ... // Overrides an auth dependency to ensure correct behavior implementation &#39;com.google.android.gms:play-services-auth:15.0.1&#39; implementation &#39;com.google.firebase:firebase-core:16.0.1&#39; implementation &#39;com.google.firebase:firebase-messaging:17.3.0&#39; implementation &#39;com.</description>
+    </item>
+    
+    <item>
+      <title>Send Push message</title>
+      <link>/socialapp/pinpoint/s3iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/pinpoint/s3iam/</guid>
+      <description>Push messages can be sent via pinpoint&amp;rsquo;s campaign. In a shell, run: (You can also go directly from the console.)
+amplify notifications console  Navigate to  AWS console&amp;gt; service&amp;gt; Pinpoint&amp;gt; campaigns&amp;gt; create a campaign .
+Enter first-push in Campaign name and go to Next.
+Select Create a segment and name it myGroup. Go to the Next step. On the right, 3 endpoints is the number of mobile devices on which your app is currently active.</description>
+    </item>
+    
+  </channel>
+</rss>

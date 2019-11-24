@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/amplifyinstall/install_cli/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/amplifyinstall/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/amplifyinstall/amplifyinit/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/appsync/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cleanup/delete/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/facebook-config/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/amplify-cognito/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/appsync/amplify-appsync/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/pinpoint/fcm-settings/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>/devicefarm/remote/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/cognito-splash/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/appsync/android-appsync/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/cognito-auth-social/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/cognito-auth-email/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/appsync/s3iam/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/translate/translate/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/cognito/cognito-auth-login/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/translate/translateiam/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/pinpoint/amplify-pinpoint/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/appsync/android-appsync-query/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialapp/pinpoint/android-pinpoint/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/prerequisites/gitclone/</loc>
+  </url>
+  
+  <url>
+    <loc>/devicefarm/fuzzy/</loc>
+  </url>
+  
+  <url>
+    <loc>/prerequisites/installtools/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/pinpoint/s3iam/</loc>
+  </url>
+  
+  <url>
+    <loc>/prerequisites/workspace/</loc>
+  </url>
+  
+  <url>
+    <loc>/devicefarm/instrumented/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/translate/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialapp/pinpoint/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cleanup/</loc>
+  </url>
+  
+  <url>
+    <loc>/devicefarm/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/example_cf_templates/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>

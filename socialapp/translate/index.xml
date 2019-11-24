@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integrating Amazon Translate on AWS Android Social HoL</title>
+    <link>/socialapp/translate/</link>
+    <description>Recent content in Integrating Amazon Translate on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    
+	<atom:link href="/socialapp/translate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrating Translate Service</title>
+      <link>/socialapp/translate/translate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/translate/translate/</guid>
+      <description>Add dependency to build.gradle (Module: app) as shown below.
+dependencies { ... implementation &#39;com.amazonaws:aws-android-sdk-translate:2.13.+&#39; }  The TRANSLATE button is located on each post. Registers a button click event and listener in bindData () of PostAdapter for translation when the TRANSLATE button is pressed.
+void bindData(final ListPostsQuery.Item item) { titleTxt.setText(item.title()); ... //add translateBtn.setOnClickListener(new Button.OnClickListener() { public void onClick(View v) { doTranslate(contentsTxt); doTranslate(titleTxt); } }); }  Write the function responsible for the actual translation under the bindData () function.</description>
+    </item>
+    
+    <item>
+      <title>IAM Role</title>
+      <link>/socialapp/translate/translateiam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/socialapp/translate/translateiam/</guid>
+      <description>The reason for not being translated is the following error in logcat: AccessDenied.
+2019-09-04 18:00:40.159 10974-11061/com.example.socialandroidapp E/dev-day-item: Error occurred in translating the text: User: arn:aws:sts::539063931014:assumed-role/aws-android-workshop-dev-20190903125208-authRole/CognitoIdentityCredentials is not authorized to perform: translate:TranslateText (Service: AmazonTranslate; Status Code: 400; Error Code: AccessDeniedException; Request ID: af77f01a-f368-4987-96f0-780c7c6ca26d)  There was an IAM role created with the Amplify init. This role can be solved by giving Translate permission.
+ AWS console&amp;gt; service&amp;gt; IAM&amp;gt; Roles&amp;gt; aws-android-workshop-dev  in the search box and select auth role.</description>
+    </item>
+    
+  </channel>
+</rss>
