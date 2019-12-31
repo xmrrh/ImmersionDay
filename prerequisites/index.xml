@@ -11,27 +11,27 @@
     
     
     <item>
-      <title>Clone Workshop Repository</title>
-      <link>/prerequisites/gitclone/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/prerequisites/gitclone/</guid>
-      <description>Copy the repository containing the source files for the lab.
-git clone https://github.com/xmrrh/aws-android-workshop.git  If you don&amp;rsquo;t have git installed, please go to the following page and download zip the source and unzip it..
-https://github.com/xmrrh/aws-android-workshop</description>
-    </item>
-    
-    <item>
       <title>Install Android Tools</title>
       <link>/prerequisites/installtools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/prerequisites/installtools/</guid>
       <description>Java SDK, Android SDK, and Android Studio are required. If you need to install them, please install each one through the link below.
-** Note that Android SDK and AVD versions are not important. **
+Note that Android SDK and AVD versions are not important.
 Java SDK Install If you do not have Java SDK 8.0 or higher installed Download
 Android Studio and SDK Install If you don&amp;rsquo;t have Android Studio installed Download
 Please install Android SDK as follows during installation.</description>
+    </item>
+    
+    <item>
+      <title>Clone Workshop Repository</title>
+      <link>/prerequisites/gitclone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/prerequisites/gitclone/</guid>
+      <description>Copy the repository containing the source files for the lab.
+git clone https://github.com/xmrrh/aws-android-workshop.git  If you don&amp;rsquo;t have git installed, please go to the following page and download zip the source and unzip it.
+https://github.com/xmrrh/aws-android-workshop</description>
     </item>
     
     <item>
@@ -40,9 +40,9 @@ Please install Android SDK as follows during installation.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/prerequisites/workspace/</guid>
-      <description>Start Android Studio.
-Select Open an existing Android Studio project.
-Select the downloaded source directory.
+      <description>Run the Android Studio.
+Selete Open an existing Android Studio project.
+Choose the downloaded source directory.
 When the project is created, it should look like the following. Make sure there are no issues with your build Press Run button at the top of your Android Studio project to run it with the emulator you&amp;rsquo;ve already created. It looks like this: You are now ready for the lab. Now let&amp;rsquo;s complete the features one by one using AWS services.</description>
     </item>
     

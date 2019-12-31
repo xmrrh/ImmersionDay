@@ -17,7 +17,10 @@
       
       <guid>/socialapp/amplifyinstall/install_cli/</guid>
       <description>AWS Amplify makes it easy to create, configure, and implement scalable mobile and web apps based on AWS. AWS Amplify provisions and manages backends for mobile applications.
-Simply select the features you need, such as authentication, analytics, and offline data synchronization, and Amplify automatically provisions and manages the AWS services that provide each. Simply select the features you need, such as authentication, analytics, and offline data synchronization, and Amplify automatically provisions and manages the AWS services that provide each.</description>
+Simply select the features you need, such as authentication, analytics, and offline data synchronization, and Amplify automatically provisions and manages the AWS services that provide each.
+Use npm to install the Amplify CLI. If npm is not installed
+Install via https://nodejs.org/en/download/
+Install the Amplify CLI.</description>
     </item>
     
     <item>
@@ -27,12 +30,9 @@ Simply select the features you need, such as authentication, analytics, and offl
       
       <guid>/socialapp/amplifyinstall/amplifyinit/</guid>
       <description>Move to the root directory of the downloaded sample app and initialize the Amplify project.
-cd aws-android-workshop/ amplify init  Enter Enter for the project name to use default
-The environment is dev,
-The editor chooses a convenient one. ( For example, vim ).
-The OS type is Android
-For res directory, type Enter to use default.
-Choose to use AWS Profile ( Y ) and select the profile you have already created.</description>
+cd aws-android-workshop/ amplify init  Press Enter to accept the default project name
+For the name of the environment you can either choose the name of the operating system you are working on or the environments such as dev, local or production. Enter dev for the environment name.
+Select a convenient one for the default editor.</description>
     </item>
     
   </channel>

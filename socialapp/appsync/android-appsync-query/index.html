@@ -18,21 +18,21 @@
     <title>List up posts  :: AWS Android Social HoL</title>
 
     
-    <link href="../../../css/nucleus.css?1574601295" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1574601295" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1574601295" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1574601295" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1574601295" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1574601295" rel="stylesheet">
-    <link href="../../../css/theme.css?1574601295" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1574601295" rel="stylesheet">
-    <link href="../../../css/jquery-ui.min.css?1574601295" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1577772078" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1577772078" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1577772078" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1577772078" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1577772078" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1577772078" rel="stylesheet">
+    <link href="../../../css/theme.css?1577772078" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1577772078" rel="stylesheet">
+    <link href="../../../css/jquery-ui.min.css?1577772078" rel="stylesheet">
     
-      <link href="../../../css/theme-mine.css?1574601295" rel="stylesheet">
+      <link href="../../../css/theme-mine.css?1577772078" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1574601295"></script>
-    <script src="../../../js/jquery-ui-1.12.1.min.js?1574601295"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1577772078"></script>
+    <script src="../../../js/jquery-ui-1.12.1.min.js?1577772078"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1574601295"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1574601295"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1577772078"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1577772078"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1574601295"></script>
+<script type="text/javascript" src="../../../js/search.js?1577772078"></script>
 
     
   </div>
@@ -112,9 +112,9 @@
  
   
     
-      <li data-nav-id="/prerequisites/gitclone/" title="Clone Workshop Repository" class="dd-item ">
-        <a href="../../../prerequisites/gitclone/">
-        Clone Workshop Repository
+      <li data-nav-id="/prerequisites/installtools/" title="Install Android Tools" class="dd-item ">
+        <a href="../../../prerequisites/installtools/">
+        Install Android Tools
         
         </a>
     </li>
@@ -131,9 +131,9 @@
  
   
     
-      <li data-nav-id="/prerequisites/installtools/" title="Install Android Tools" class="dd-item ">
-        <a href="../../../prerequisites/installtools/">
-        Install Android Tools
+      <li data-nav-id="/prerequisites/gitclone/" title="Clone Workshop Repository" class="dd-item ">
+        <a href="../../../prerequisites/gitclone/">
+        Clone Workshop Repository
         
         </a>
     </li>
@@ -773,13 +773,13 @@
  
   
     
-    <li data-nav-id="/devicefarm/" title="DeviceFarm Test" class="dd-item 
+    <li data-nav-id="/devicefarm/" title="DeviceFarm Test ( Additional )" class="dd-item 
         
         
         
         ">
       <a href="../../../devicefarm/">
-          DeviceFarm Test
+          DeviceFarm Test ( Additional )
           
       </a>
       
@@ -935,7 +935,7 @@
         
 
 
-<p>Now we will list up the posts posted by the user on the main screen.</p>
+<p>Now we will list up posts posted by the user on the main screen.</p>
 
 <p>In the onCreate function of MainActivity.java, create an AWSAppSyncClient using the ClientFactory.</p>
 
@@ -1000,7 +1000,20 @@ public void queryList() {
     };
 </code></pre>
 
-<p>Import the necessary classes. In Android Studio, syntax that requires import displays an error in red. Move the cursor to the location, press the [MAC] option key and the Enter key ([Window] Alt key and Enter key) at the same time and select the import class. The required class is automatically imported.</p>
+<p>Import the required class.</p>
+
+<pre><code class="language-java">import com.amazonaws.amplify.generated.graphql.ListPostsQuery;
+import com.amazonaws.mobileconnectors.appsync.fetcher.AppSyncResponseFetchers;
+import com.apollographql.apollo.GraphQLCall;
+import com.apollographql.apollo.api.Response;
+import com.apollographql.apollo.exception.ApolloException;
+import java.util.ArrayList;
+import javax.annotation.Nonnull;
+import type.ModelSortDirection;
+
+</code></pre>
+
+<p>Note : In Android Studio, syntax that requires import displays an error in red. Move the cursor to the location, press the [MAC] option key and the Enter key ([Window] Alt key and Enter key) at the same time and select the import class. The required class is automatically imported.</p>
 
 <p><img src="../../../images/optionenter.png" width="80%" hight="80%">
 <img src="../../../images/importclass.png" width="80%" hight="80%"></p>
@@ -1126,7 +1139,9 @@ public class PostAdapter extends RecyclerView.Adapter&lt;PostAdapter.Holder&gt; 
 
 <p>Write the following at the bottom of onCreate () function of MainActivity.java</p>
 
-<pre><code class="language-java">protected void onCreate(Bundle savedInstanceState) {
+<pre><code class="language-java">import androidx.recyclerview.widget.LinearLayoutManager;
+
+protected void onCreate(Bundle savedInstanceState) {
   ...
     mAdapter = new PostAdapter(getApplicationContext());
 
@@ -1753,20 +1768,20 @@ public class PostAdapter extends RecyclerView.Adapter&lt;PostAdapter.Holder&gt; 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1574601295"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1574601295"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1574601295"></script>
-    <script src="../../../js/jquery.sticky.js?1574601295"></script>
-    <script src="../../../js/featherlight.min.js?1574601295"></script>
-    <script src="../../../js/html5shiv-printshiv.min.js?1574601295"></script>
-    <script src="../../../js/highlight.pack.js?1574601295"></script>
+    <script src="../../../js/clipboard.min.js?1577772078"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1577772078"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1577772078"></script>
+    <script src="../../../js/jquery.sticky.js?1577772078"></script>
+    <script src="../../../js/featherlight.min.js?1577772078"></script>
+    <script src="../../../js/html5shiv-printshiv.min.js?1577772078"></script>
+    <script src="../../../js/highlight.pack.js?1577772078"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1574601295"></script>
-    <script src="../../../js/learn.js?1574601295"></script>
-    <script src="../../../js/hugo-learn.js?1574601295"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1577772078"></script>
+    <script src="../../../js/learn.js?1577772078"></script>
+    <script src="../../../js/hugo-learn.js?1577772078"></script>
 
-    <link href="../../../mermaid/mermaid.css?1574601295" type="text/css" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.min.js?1574601295"></script>
+    <link href="../../../mermaid/mermaid.css?1577772078" type="text/css" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.min.js?1577772078"></script>
     <script>
 	var config = {
         startOnLoad:true,

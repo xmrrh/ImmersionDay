@@ -113,15 +113,15 @@
   </url>
   
   <url>
+    <loc>/prerequisites/installtools/</loc>
+  </url>
+  
+  <url>
     <loc>/prerequisites/gitclone/</loc>
   </url>
   
   <url>
     <loc>/devicefarm/fuzzy/</loc>
-  </url>
-  
-  <url>
-    <loc>/prerequisites/installtools/</loc>
   </url>
   
   <url>
