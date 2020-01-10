@@ -18,21 +18,21 @@
     <title>Configuring Amazon Cognito Service :: AWS Android Social HoL</title>
 
     
-    <link href="../../../css/nucleus.css?1577944869" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1577944869" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1577944869" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1577944869" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1577944869" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1577944869" rel="stylesheet">
-    <link href="../../../css/theme.css?1577944869" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1577944869" rel="stylesheet">
-    <link href="../../../css/jquery-ui.min.css?1577944869" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1578619081" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1578619081" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1578619081" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1578619081" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1578619081" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1578619081" rel="stylesheet">
+    <link href="../../../css/theme.css?1578619081" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1578619081" rel="stylesheet">
+    <link href="../../../css/jquery-ui.min.css?1578619081" rel="stylesheet">
     
-      <link href="../../../css/theme-mine.css?1577944869" rel="stylesheet">
+      <link href="../../../css/theme-mine.css?1578619081" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1577944869"></script>
-    <script src="../../../js/jquery-ui-1.12.1.min.js?1577944869"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1578619081"></script>
+    <script src="../../../js/jquery-ui-1.12.1.min.js?1578619081"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1577944869"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1577944869"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1578619081"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1578619081"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1577944869"></script>
+<script type="text/javascript" src="../../../js/search.js?1578619081"></script>
 
     
   </div>
@@ -300,25 +300,6 @@
  
   
     
-      <li data-nav-id="/socialapp/cognito/facebook-config/" title="Configuring Facebook OAuth" class="dd-item ">
-        <a href="../../../socialapp/cognito/facebook-config/">
-        Configuring Facebook OAuth
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/socialapp/cognito/amplify-cognito/" title="Configuring Amazon Cognito Service" class="dd-item active">
         <a href="../../../socialapp/cognito/amplify-cognito/">
         Configuring Amazon Cognito Service
@@ -341,25 +322,6 @@
       <li data-nav-id="/socialapp/cognito/cognito-splash/" title="Creating a splash screen" class="dd-item ">
         <a href="../../../socialapp/cognito/cognito-splash/">
         Creating a splash screen
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialapp/cognito/cognito-auth-social/" title="Implementing social login" class="dd-item ">
-        <a href="../../../socialapp/cognito/cognito-auth-social/">
-        Implementing social login
         
         </a>
     </li>
@@ -942,64 +904,22 @@
 <pre><code class="language-shell">amplify add auth
 </code></pre>
 
-<p>Please refer to the picture below for the selection in progress.</p>
+<p>Please refer to the picture below for the selection in progress.
+<img src="../../../images/amplify-auth-cli-setting.png" alt="Example Service" /></p>
 
-<p><img src="../../../images/amplify-auth-config.png" alt="Example Service" /></p>
-
-<p><strong>When setting the domain name, names including aws, amazon, cognito, and _ cannot be used. You should enter the name in the form of &lsquo;android-workshop + random text&rsquo;.</strong></p>
-
-<p>Enter the redirect URI as shown below.</p>
-
-<p><strong>redirect signin URI :</strong></p>
-
-<pre><code class="language-shell">socialdemoapp://callback/
-</code></pre>
-
-<p><strong>redirect signout URI :</strong></p>
-
-<pre><code class="language-shell">socialdemoapp://signout/
-</code></pre>
-
-<p>When selecting a facebook from <strong>social providers</strong>, select it using the <strong>Space bar</strong>.</p>
-
-<p><strong>App ID</strong> and <strong>App Secret</strong> information uses the App ID and App Secret from the Facebook credentials you created in the previous tutorial.</p>
-
-<p>Select No for <strong>Do you want to configure advanced settings for the GraphQL API?</strong>.</p>
-
-<p>When finished, update the relevant AWS resources with the following command:</p>
+<p>When finished, build all your local backend resources and provision it in the cloud with the following command:</p>
 
 <pre><code class="language-shell">amplify push
 </code></pre>
 
-<p><img src="../../../images/amplify-auth-push.png" alt="Example Service" /></p>
-
-<p>If the necessary resources have been created normally, you can check the Hosted UI Endpoint as shown below.
-<img src="../../../images/amplify-auth-cli-result.png" alt="Example Service" /></p>
+<p>Press &lsquo;Y&rsquo; to continue. It will take minutes to complete.
+<img src="../../../images/amplify-cognito-push.png" alt="Example Service" /></p>
 
 <p>To verify that the Cognito User Pool has been created, access the AWS Management Console(AWS console&gt; Services&gt; Cognito&gt; User Pools).
-<img src="../../../images/auth-cognito-userpool.png" alt="Example Service" /></p>
+<img src="../../../images/amplify-cognito-console.png" alt="Example Service" /></p>
 
 <p>You can also see that each configuration value is created in res/raw/awsconfiguration.json file in Android Studio.
-<img src="../../../images/auth-android-config.png" alt="Example Service" /></p>
-
-<p>Finally, update the Cognito domain information you created on the Facebook developer site.</p>
-
-<ol>
-<li><p>On the Facebook developer site, select the app you created in the previous tutorial (AWSAndroidWorkshop).</p></li>
-
-<li><p>From the left navigation bar, select Settings &gt; Basic. Save Hosted UI Endpoint value output from Amplify CLI execution in App Domains. The same value as Cognito&rsquo;s User Pool Domain Name can also be found in the AWS Management Console&rsquo;s menu [AWS console&gt; Services&gt; Cognito&gt; User Pools&gt; Domain Name]. <br>
-<strong>https://&lt;your-user-pool-domain&gt;</strong>
-<img src="../../../images/facebook-app-domain.png" alt="Facebook" /></p></li>
-
-<li><p>Go to the Dashboard menu on the Facebook developer site. <br>
-Under &lsquo;Add a Product&rsquo;, choose the &lsquo;Set Up&rsquo; button to enable Facebook Login.
-<img src="../../../images/facebook-add-product.png" alt="Facebook" /></p></li>
-
-<li><p>Move to &lsquo;Products &gt; Facebook Login &gt; Settings&rsquo; on the Facebook developer site. <br>
-Enable &lsquo;Embedded Browser OAuth Login&rsquo;, enter the following URI in Valid OAuth Redirects URIs, and click Save Changes.<br>
-<strong>https://&lt;your-user-pool-domain&gt;/oauth2/idpresponse</strong>
-<img src="../../../images/facebook-oauth-redirect.png" alt="Facebook" /></p></li>
-</ol>
+<img src="../../../images/amplify-auth-android-config.png" alt="Example Service" /></p>
 
 
 <footer class=" footline" >
@@ -1186,25 +1106,6 @@ Enable &lsquo;Embedded Browser OAuth Login&rsquo;, enter the following URI in Va
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1224,22 +1125,6 @@ Enable &lsquo;Embedded Browser OAuth Login&rsquo;, enter the following URI in Va
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1601,7 +1486,7 @@ Enable &lsquo;Embedded Browser OAuth Login&rsquo;, enter the following URI in Va
 
 
         
-            <a class="nav nav-prev" href="../../../socialapp/cognito/facebook-config/" title="Configuring Facebook OAuth"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="../../../socialapp/cognito/" title="Authenticating users with Cognito"> <i class="fas fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="../../../socialapp/cognito/cognito-splash/" title="Creating a splash screen" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
@@ -1613,20 +1498,20 @@ Enable &lsquo;Embedded Browser OAuth Login&rsquo;, enter the following URI in Va
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1577944869"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1577944869"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1577944869"></script>
-    <script src="../../../js/jquery.sticky.js?1577944869"></script>
-    <script src="../../../js/featherlight.min.js?1577944869"></script>
-    <script src="../../../js/html5shiv-printshiv.min.js?1577944869"></script>
-    <script src="../../../js/highlight.pack.js?1577944869"></script>
+    <script src="../../../js/clipboard.min.js?1578619081"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1578619081"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1578619081"></script>
+    <script src="../../../js/jquery.sticky.js?1578619081"></script>
+    <script src="../../../js/featherlight.min.js?1578619081"></script>
+    <script src="../../../js/html5shiv-printshiv.min.js?1578619081"></script>
+    <script src="../../../js/highlight.pack.js?1578619081"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1577944869"></script>
-    <script src="../../../js/learn.js?1577944869"></script>
-    <script src="../../../js/hugo-learn.js?1577944869"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1578619081"></script>
+    <script src="../../../js/learn.js?1578619081"></script>
+    <script src="../../../js/hugo-learn.js?1578619081"></script>
 
-    <link href="../../../mermaid/mermaid.css?1577944869" type="text/css" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.min.js?1577944869"></script>
+    <link href="../../../mermaid/mermaid.css?1578619081" type="text/css" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.min.js?1578619081"></script>
     <script>
 	var config = {
         startOnLoad:true,

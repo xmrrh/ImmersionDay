@@ -12,17 +12,6 @@
     
     
     <item>
-      <title>Configuring Facebook OAuth</title>
-      <link>/socialapp/cognito/facebook-config/</link>
-      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
-      
-      <guid>/socialapp/cognito/facebook-config/</guid>
-      <description>In this tutorial, we&amp;rsquo;re going to set up OAuth configurations on the Facebook developer site to support Facebook login.
-In the lab, we will configure OAuth2.0 integration using the Hosted UI method provided by Amazon Cognito. With this method, we can implement social login without installing Facebook SDK.
- Create a developer account in Facebook developer portal. Log in to the Facebook developer site using own Facebook account. Select a &amp;lsquo;Create App&amp;rsquo; in &amp;lsquo;My Apps&amp;rsquo; menu.</description>
-    </item>
-    
-    <item>
       <title>Configuring Amazon Cognito Service</title>
       <link>/socialapp/cognito/amplify-cognito/</link>
       <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
@@ -30,8 +19,8 @@ In the lab, we will configure OAuth2.0 integration using the Hosted UI method pr
       <guid>/socialapp/cognito/amplify-cognito/</guid>
       <description>Amazon Cognito allows you to quickly and easily add user sign-up, sign-in, and access control to your mobile app.
 Run the following command from the top level of your Android project.
-amplify add auth  Please refer to the picture below for the selection in progress.
-When setting the domain name, names including aws, amazon, cognito, and _ cannot be used. You should enter the name in the form of &amp;lsquo;android-workshop + random text&amp;rsquo;.</description>
+amplify add auth  Please refer to the picture below for the selection in progress. When finished, build all your local backend resources and provision it in the cloud with the following command:
+amplify push  Press &amp;lsquo;Y&amp;rsquo; to continue.</description>
     </item>
     
     <item>
@@ -40,21 +29,9 @@ When setting the domain name, names including aws, amazon, cognito, and _ cannot
       <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
       
       <guid>/socialapp/cognito/cognito-splash/</guid>
-      <description>In this tutorial, we will configure a splash page of the app. In the splash page, code is added to check the login status of Cognito. If there is no existing login information, move to the login main page, and if there is login information, move to the app main page.
+      <description>In this tutorial, we will configure a splash page of the app. On the splash page, code is added to check the login status. If there is no existing login information, the page will be moved to the LOGIN MAIN page, and if there is login information, the page will be moved to the APP MAIN page.
 Copy the code snippet below to complete the _ initCognito method.
 // SplashActivity.java public class SplashActivity extends AppCompatActivity { .</description>
-    </item>
-    
-    <item>
-      <title>Implementing social login</title>
-      <link>/socialapp/cognito/cognito-auth-social/</link>
-      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
-      
-      <guid>/socialapp/cognito/cognito-auth-social/</guid>
-      <description>In this tutorial, we will implement Facebook-based social login using Cognito&amp;rsquo;s Hosted UI feature.
-With Hosted UI feature, OAuth2 authentication is done between servers, so we do not need to install a mobile SDK provided by Facebook. Currently, supporting Identity Providers are Facebook, Google, and Amazon.
-Copy the code below to complete the _ openFacebookLogin method for adding Hosted UI functionality for Facebook login.
-// AuthMainActivity.java public class AuthMainActivity extends AppCompatActivity { .</description>
     </item>
     
     <item>
@@ -63,9 +40,9 @@ Copy the code below to complete the _ openFacebookLogin method for adding Hosted
       <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
       
       <guid>/socialapp/cognito/cognito-auth-email/</guid>
-      <description>In this tutorial, we will implement email-based signup.
-Before starting the lab, we will access the AWS Conginto management console to verify that email is selected as the login method. Verify that the contents of the Attributes item in the AWS Management Console are set up as shown below. Now let&amp;rsquo;s step through the code for email-based signup.
- Sign up using the email and password. Copy the code below to complete the signUp method for signing up.</description>
+      <description>In this tutorial, we will implement email-based signup with client APIs provided by AWSMobileClient.
+Before starting the lab, we need to access the AWS Conginto management console to verify that email is selected as the login method. Verify that the contents of the Attributes item in the AWS Management Console are set up as shown below. Now let&amp;rsquo;s step through the code for email-based signup.
+ Sign up using the email and password.</description>
     </item>
     
     <item>

@@ -34,11 +34,6 @@
   </url>
   
   <url>
-    <loc>/socialapp/cognito/facebook-config/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/socialapp/cognito/amplify-cognito/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
@@ -68,11 +63,6 @@
   
   <url>
     <loc>/socialapp/appsync/android-appsync/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/socialapp/cognito/cognito-auth-social/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
