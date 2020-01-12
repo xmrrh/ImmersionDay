@@ -15,24 +15,24 @@
     <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon" />
 
-    <title>Implementing e-mail based login :: AWS Android Social HoL</title>
+    <title>안드로이드 로그인 액티비티 생성하기 - 코드 설명하지 않음 :customUI로 변경예정(by성진님) :: AWS Android Social HoL</title>
 
     
-    <link href="../../../css/nucleus.css?1578860129" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1578860129" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1578860129" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1578860129" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1578860129" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1578860129" rel="stylesheet">
-    <link href="../../../css/theme.css?1578860129" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1578860129" rel="stylesheet">
-    <link href="../../../css/jquery-ui.min.css?1578860129" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1568599817" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1568599817" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1568599817" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1568599817" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1568599817" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1568599817" rel="stylesheet">
+    <link href="../../../css/theme.css?1568599817" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1568599817" rel="stylesheet">
+    <link href="../../../css/jquery-ui.min.css?1568599817" rel="stylesheet">
     
-      <link href="../../../css/theme-mine.css?1578860129" rel="stylesheet">
+      <link href="../../../css/theme-mine.css?1568599817" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1578860129"></script>
-    <script src="../../../js/jquery-ui-1.12.1.min.js?1578860129"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1568599817"></script>
+    <script src="../../../js/jquery-ui-1.12.1.min.js?1568599817"></script>
 
 
     <style type="text/css">
@@ -47,7 +47,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/socialapp/cognito/cognito-auth-login/">
+  <body class="" data-url="/socialapp/cognito/android-cognito/">
     <nav id="sidebar" class="">
 
 
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1578860129"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1578860129"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1568599817"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1568599817"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1578860129"></script>
+<script type="text/javascript" src="../../../js/search.js?1568599817"></script>
 
     
   </div>
@@ -87,13 +87,13 @@
  
   
     
-    <li data-nav-id="/prerequisites/" title="Start workshop" class="dd-item 
+    <li data-nav-id="/prerequisites/" title="워크샵 시작하기" class="dd-item 
         
         
         
         ">
       <a href="../../../prerequisites/">
-          Start workshop
+          워크샵 시작하기
           
       </a>
       
@@ -112,9 +112,9 @@
  
   
     
-      <li data-nav-id="/prerequisites/installtools/" title="Install Android Tools" class="dd-item ">
+      <li data-nav-id="/prerequisites/installtools/" title="안드로이드 툴 설치하기" class="dd-item ">
         <a href="../../../prerequisites/installtools/">
-        Install Android Tools
+        안드로이드 툴 설치하기
         
         </a>
     </li>
@@ -131,9 +131,9 @@
  
   
     
-      <li data-nav-id="/prerequisites/gitclone/" title="Clone Workshop Repository" class="dd-item ">
+      <li data-nav-id="/prerequisites/gitclone/" title="워크샵 저장소 복제하기" class="dd-item ">
         <a href="../../../prerequisites/gitclone/">
-        Clone Workshop Repository
+        워크샵 저장소 복제하기
         
         </a>
     </li>
@@ -150,9 +150,9 @@
  
   
     
-      <li data-nav-id="/prerequisites/workspace/" title="Create Android Studio Project" class="dd-item ">
+      <li data-nav-id="/prerequisites/workspace/" title="안드로이드 스튜디오 프로젝트 생성" class="dd-item ">
         <a href="../../../prerequisites/workspace/">
-        Create Android Studio Project
+        안드로이드 스튜디오 프로젝트 생성
         
         </a>
     </li>
@@ -176,13 +176,13 @@
  
   
     
-    <li data-nav-id="/socialapp/" title="Create an application" class="dd-item 
+    <li data-nav-id="/socialapp/" title="서비스 구성" class="dd-item 
         parent
         
         
         ">
       <a href="../../../socialapp/">
-          Create an application
+          서비스 구성
           
       </a>
       
@@ -203,13 +203,13 @@
  
   
     
-    <li data-nav-id="/socialapp/amplifyinstall/" title="Android Amplify Initialization" class="dd-item 
+    <li data-nav-id="/socialapp/amplifyinstall/" title="Android Amplify 초기화" class="dd-item 
         
         
         
         ">
       <a href="../../../socialapp/amplifyinstall/">
-          Android Amplify Initialization
+          Android Amplify 초기화
           
       </a>
       
@@ -228,9 +228,9 @@
  
   
     
-      <li data-nav-id="/socialapp/amplifyinstall/install_cli/" title="Amplify CLI Install" class="dd-item ">
+      <li data-nav-id="/socialapp/amplifyinstall/install_cli/" title="Amplify CLI 설치" class="dd-item ">
         <a href="../../../socialapp/amplifyinstall/install_cli/">
-        Amplify CLI Install
+        Amplify CLI 설치
         
         </a>
     </li>
@@ -247,9 +247,9 @@
  
   
     
-      <li data-nav-id="/socialapp/amplifyinstall/amplifyinit/" title="Amplify Initialization" class="dd-item ">
+      <li data-nav-id="/socialapp/amplifyinstall/amplifyinit/" title="Amplify 초기화" class="dd-item ">
         <a href="../../../socialapp/amplifyinstall/amplifyinit/">
-        Amplify Initialization
+        Amplify 초기화
         
         </a>
     </li>
@@ -275,13 +275,13 @@
  
   
     
-    <li data-nav-id="/socialapp/cognito/" title="Authenticating users with Cognito" class="dd-item 
+    <li data-nav-id="/socialapp/cognito/" title="회원관리 기능 구현하기" class="dd-item 
         parent
         
         
         ">
       <a href="../../../socialapp/cognito/">
-          Authenticating users with Cognito
+          회원관리 기능 구현하기
           
       </a>
       
@@ -300,9 +300,28 @@
  
   
     
-      <li data-nav-id="/socialapp/cognito/amplify-cognito/" title="Configuring Amazon Cognito Service" class="dd-item ">
+      <li data-nav-id="/socialapp/cognito/facebook-config/" title="Facebook OAuth 설정하기" class="dd-item ">
+        <a href="../../../socialapp/cognito/facebook-config/">
+        Facebook OAuth 설정하기
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/socialapp/cognito/amplify-cognito/" title="Amazon Cognito Service 만들기" class="dd-item ">
         <a href="../../../socialapp/cognito/amplify-cognito/">
-        Configuring Amazon Cognito Service
+        Amazon Cognito Service 만들기
         
         </a>
     </li>
@@ -319,47 +338,9 @@
  
   
     
-      <li data-nav-id="/socialapp/cognito/cognito-splash/" title="Creating a splash screen" class="dd-item ">
-        <a href="../../../socialapp/cognito/cognito-splash/">
-        Creating a splash screen
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialapp/cognito/cognito-auth-email/" title="Implementing e-mail based signup" class="dd-item ">
-        <a href="../../../socialapp/cognito/cognito-auth-email/">
-        Implementing e-mail based signup
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialapp/cognito/cognito-auth-login/" title="Implementing e-mail based login" class="dd-item active">
-        <a href="../../../socialapp/cognito/cognito-auth-login/">
-        Implementing e-mail based login
+      <li data-nav-id="/socialapp/cognito/android-cognito/" title="안드로이드 로그인 액티비티 생성하기 - 코드 설명하지 않음 :customUI로 변경예정(by성진님)" class="dd-item active">
+        <a href="../../../socialapp/cognito/android-cognito/">
+        안드로이드 로그인 액티비티 생성하기 - 코드 설명하지 않음 :customUI로 변경예정(by성진님)
         
         </a>
     </li>
@@ -385,13 +366,13 @@
  
   
     
-    <li data-nav-id="/socialapp/appsync/" title="Create a social post repository" class="dd-item 
+    <li data-nav-id="/socialapp/appsync/" title="소셜 게시물 저장소 만들기" class="dd-item 
         
         
         
         ">
       <a href="../../../socialapp/appsync/">
-          Create a social post repository
+          소셜 게시물 저장소 만들기
           
       </a>
       
@@ -410,9 +391,9 @@
  
   
     
-      <li data-nav-id="/socialapp/appsync/amplify-appsync/" title="Create Repository and Create API" class="dd-item ">
+      <li data-nav-id="/socialapp/appsync/amplify-appsync/" title="저장소 생성 및 API 생성" class="dd-item ">
         <a href="../../../socialapp/appsync/amplify-appsync/">
-        Create Repository and Create API
+        저장소 생성 및 API 생성
         
         </a>
     </li>
@@ -429,9 +410,9 @@
  
   
     
-      <li data-nav-id="/socialapp/appsync/android-appsync/" title="Write a post " class="dd-item ">
+      <li data-nav-id="/socialapp/appsync/android-appsync/" title="게시물 작성하기 " class="dd-item ">
         <a href="../../../socialapp/appsync/android-appsync/">
-        Write a post 
+        게시물 작성하기 
         
         </a>
     </li>
@@ -448,9 +429,9 @@
  
   
     
-      <li data-nav-id="/socialapp/appsync/s3iam/" title="IAM Role" class="dd-item ">
+      <li data-nav-id="/socialapp/appsync/s3iam/" title="IAM 권한 주기" class="dd-item ">
         <a href="../../../socialapp/appsync/s3iam/">
-        IAM Role
+        IAM 권한 주기
         
         </a>
     </li>
@@ -467,9 +448,9 @@
  
   
     
-      <li data-nav-id="/socialapp/appsync/android-appsync-query/" title="List up posts " class="dd-item ">
+      <li data-nav-id="/socialapp/appsync/android-appsync-query/" title="게시물 리스트업하기 " class="dd-item ">
         <a href="../../../socialapp/appsync/android-appsync-query/">
-        List up posts 
+        게시물 리스트업하기 
         
         </a>
     </li>
@@ -495,13 +476,13 @@
  
   
     
-    <li data-nav-id="/socialapp/translate/" title="Integrating Amazon Translate" class="dd-item 
+    <li data-nav-id="/socialapp/translate/" title="Amazon Translate 연동하기" class="dd-item 
         
         
         
         ">
       <a href="../../../socialapp/translate/">
-          Integrating Amazon Translate
+          Amazon Translate 연동하기
           
       </a>
       
@@ -520,9 +501,9 @@
  
   
     
-      <li data-nav-id="/socialapp/translate/translate/" title="Integrating Translate Service" class="dd-item ">
+      <li data-nav-id="/socialapp/translate/translate/" title="Translate서비스 연동하기" class="dd-item ">
         <a href="../../../socialapp/translate/translate/">
-        Integrating Translate Service
+        Translate서비스 연동하기
         
         </a>
     </li>
@@ -539,9 +520,9 @@
  
   
     
-      <li data-nav-id="/socialapp/translate/translateiam/" title="IAM Role" class="dd-item ">
+      <li data-nav-id="/socialapp/translate/translateiam/" title="IAM 권한 주기" class="dd-item ">
         <a href="../../../socialapp/translate/translateiam/">
-        IAM Role
+        IAM 권한 주기
         
         </a>
     </li>
@@ -567,13 +548,13 @@
  
   
     
-    <li data-nav-id="/socialapp/pinpoint/" title="Send Push message" class="dd-item 
+    <li data-nav-id="/socialapp/pinpoint/" title="Push 메시지 보내기" class="dd-item 
         
         
         
         ">
       <a href="../../../socialapp/pinpoint/">
-          Send Push message
+          Push 메시지 보내기
           
       </a>
       
@@ -592,9 +573,9 @@
  
   
     
-      <li data-nav-id="/socialapp/pinpoint/fcm-settings/" title="Setting up Firebase Cloud Messaging (FCM)" class="dd-item ">
+      <li data-nav-id="/socialapp/pinpoint/fcm-settings/" title=" Firebase Cloud Messaging (FCM)설정하기" class="dd-item ">
         <a href="../../../socialapp/pinpoint/fcm-settings/">
-        Setting up Firebase Cloud Messaging (FCM)
+         Firebase Cloud Messaging (FCM)설정하기
         
         </a>
     </li>
@@ -611,9 +592,9 @@
  
   
     
-      <li data-nav-id="/socialapp/pinpoint/amplify-pinpoint/" title="Create an Amazon Pinpoint Service" class="dd-item ">
+      <li data-nav-id="/socialapp/pinpoint/amplify-pinpoint/" title="Amazon Pinpoint 생성하기 " class="dd-item ">
         <a href="../../../socialapp/pinpoint/amplify-pinpoint/">
-        Create an Amazon Pinpoint Service
+        Amazon Pinpoint 생성하기 
         
         </a>
     </li>
@@ -630,9 +611,9 @@
  
   
     
-      <li data-nav-id="/socialapp/pinpoint/android-pinpoint/" title="Writing Android Code for Push Notifications  " class="dd-item ">
+      <li data-nav-id="/socialapp/pinpoint/android-pinpoint/" title="Push Notification을 위한 안드로이드 코드 작성하기  " class="dd-item ">
         <a href="../../../socialapp/pinpoint/android-pinpoint/">
-        Writing Android Code for Push Notifications  
+        Push Notification을 위한 안드로이드 코드 작성하기  
         
         </a>
     </li>
@@ -649,9 +630,9 @@
  
   
     
-      <li data-nav-id="/socialapp/pinpoint/s3iam/" title="Send Push message" class="dd-item ">
+      <li data-nav-id="/socialapp/pinpoint/s3iam/" title="Push 메시지 보내기" class="dd-item ">
         <a href="../../../socialapp/pinpoint/s3iam/">
-        Send Push message
+        Push 메시지 보내기
         
         </a>
     </li>
@@ -684,13 +665,13 @@
  
   
     
-    <li data-nav-id="/cleanup/" title="Clean up" class="dd-item 
+    <li data-nav-id="/cleanup/" title="클린 업" class="dd-item 
         
         
         
         ">
       <a href="../../../cleanup/">
-          Clean up
+          클린 업
           
       </a>
       
@@ -709,187 +690,9 @@
  
   
     
-      <li data-nav-id="/cleanup/delete/" title="Delete resource" class="dd-item ">
-        <a href="../../../cleanup/delete/">
-        Delete resource
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
- 
-  
-    
-    <li data-nav-id="/devicefarm/" title="DeviceFarm Test ( Additional )" class="dd-item 
-        
-        
-        
-        ">
-      <a href="../../../devicefarm/">
-          DeviceFarm Test ( Additional )
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/devicefarm/remote/" title="To run a remote test" class="dd-item ">
-        <a href="../../../devicefarm/remote/">
-        To run a remote test
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/devicefarm/fuzzy/" title="Fuzzy App Test" class="dd-item ">
-        <a href="../../../devicefarm/fuzzy/">
-        Fuzzy App Test
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/devicefarm/instrumented/" title="Sequential Testing with the Espresso Framework" class="dd-item ">
-        <a href="../../../devicefarm/instrumented/">
-        Sequential Testing with the Espresso Framework
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
- 
-  
-    
-    <li data-nav-id="/socialauth/" title="Social Login (Additional)" class="dd-item 
-        
-        
-        
-        ">
-      <a href="../../../socialauth/">
-          Social Login (Additional)
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialauth/facebook_config/" title="Configuring Facebook OAuth" class="dd-item ">
-        <a href="../../../socialauth/facebook_config/">
-        Configuring Facebook OAuth
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialauth/amplify-cognito/" title="Configuring Amazon Cognito Service" class="dd-item ">
-        <a href="../../../socialauth/amplify-cognito/">
-        Configuring Amazon Cognito Service
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/socialauth/facebook_login/" title="Implementing social login" class="dd-item ">
-        <a href="../../../socialauth/facebook_login/">
-        Implementing social login
+      <li data-nav-id="/cleanup/delete_alb/" title="리소스 삭제" class="dd-item ">
+        <a href="../../../cleanup/delete_alb/">
+        리소스 삭제
         
         </a>
     </li>
@@ -954,7 +757,7 @@
             
           
           
-            <a href='../../../'>Android App On AWS</a> > <a href='../../../socialapp/'>Create an application</a> > <a href='../../../socialapp/cognito/'>Authenticating users with Cognito</a> > Implementing e-mail based login
+            <a href='../../../'>Android App On AWS</a> > <a href='../../../socialapp/'>서비스 구성</a> > <a href='../../../socialapp/cognito/'>회원관리 기능 구현하기</a> > 안드로이드 로그인 액티비티 생성하기 - 코드 설명하지 않음 :customUI로 변경예정(by성진님)
           
          
           
@@ -980,75 +783,155 @@
         
         <div id="body-inner">
           
-            <h1>Implementing e-mail based login</h1>
+            <h1>안드로이드 로그인 액티비티 생성하기 - 코드 설명하지 않음 :customUI로 변경예정(by성진님)</h1>
           
 
         
 
 
-<p>In this exercise, we will implement an email-based login.</p>
+<p>이제 안드로이드 프로젝트에 로그인에 사용할 액티비티를 생성해 보도록 하겠습니다.</p>
 
-<p>Copy the code below to complete the <strong>_signIn</strong> method, which performs an email-based login.</p>
+<p>우선 build.gradle (Module: app) 에 아래와 같이 추가 합니다.</p>
 
-<pre><code class="language-java">// LoginActivity.java
-public class LoginActivity extends AppCompatActivity implements Validator.ValidationListener {
+<p>AWSMobileClient를 이용하면 애플리케이션에서 사용자의 &ldquo;로그인 상태&rdquo;를 쿼리 할 수 있습니다. 또한 애플리케이션에 간단한 &ldquo;드롭 인&rdquo;UI를 위해 드롭 인 인증 UI를 다음과 같이 추가합니다.</p>
 
-    ...
+<pre><code>    //For AWSMobileClient only:
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.14.+@aar') { transitive = true }
+    //For the drop-in UI also:
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.14.+@aar') { transitive = true }
+    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.14.+'
+</code></pre>
 
-    private void _signIn(String userName, String password) {
-        AWSMobileClient.getInstance().signIn(userName, password, null, new Callback&lt;SignInResult&gt;() {
-            @Override
-            public void onResult(final SignInResult signInResult) {
-                runOnUiThread(() -&gt; {
-                    Log.d(TAG, &quot;Sign-in callback state: &quot; + signInResult.getSignInState());
-                    switch (signInResult.getSignInState()) {
-                        case DONE:
-                            makeToast(context,&quot;Sign-in done.&quot;);
-                            CommonAction.openMain(context);
-                            break;
-                        case SMS_MFA:
-                            makeToast(context, &quot;Please confirm sign-in with SMS.&quot;);
-                            break;
-                        case NEW_PASSWORD_REQUIRED:
-                            makeToast(context, &quot;Please confirm sign-in with new password.&quot;);
-                            break;
-                        default:
-                            makeToast(context, &quot;Unsupported sign-in confirmation: &quot; + signInResult.getSignInState());
-                            break;
-                    }
-                });
-            }
+<p>다음으로 인증을 위한 액티비티를 생성합니다.</p>
 
-            @Override
-            public void onError(Exception e) {
-                Log.e(TAG, &quot;Sign-in error&quot;, e);
-                runOnUiThread(() -&gt; {
-                    if (e instanceof AmazonServiceException)
-                        makeToast(context, ((AmazonServiceException) e).getErrorMessage());
-                });
-            }
-        });
+<p>AuthActivity.java</p>
+
+<pre><code class="language-java">package com.example.socialandroidapp;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.widget.EditText;
+
+import com.amazonaws.mobile.client.AWSMobileClient;
+import com.amazonaws.mobile.client.Callback;
+import com.amazonaws.mobile.client.SignInUIOptions;
+import com.amazonaws.mobile.client.UserStateDetails;
+
+public class AuthActivity extends AppCompatActivity {
+
+    private static final String TAG = &quot;aws-dev-auth&quot;;
+    private EditText userid, userpw;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.authentication_layout);
+        
     }
 
-    ...
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AWSMobileClient.getInstance().initialize(getApplicationContext(), initListenerCallback);
+
+    }
+
+    Callback&lt;UserStateDetails&gt; initListenerCallback = new Callback&lt;UserStateDetails&gt;() {
+
+        @Override
+        public void onResult(UserStateDetails userStateDetails) {
+            Log.i(TAG, &quot;onResult: &quot; + userStateDetails.getUserState());
+            switch (userStateDetails.getUserState()) {
+                case SIGNED_IN:
+                    //AWSMobileClient.getInstance().signOut();
+                    goMainActivity();
+                    break;
+                case SIGNED_OUT:
+                    //break;
+                default:
+                    //AWSMobileClient.getInstance().signOut();
+                    showSignIn();
+                    break;
+            }
+        }
+
+        @Override
+        public void onError(Exception e) {
+            Log.e(TAG, &quot;Initialization error.&quot;, e);
+            AWSMobileClient.getInstance().initialize(getApplicationContext(), initListenerCallback);
+        }
+    };
+
+    public void goMainActivity() {
+
+
+        try {
+            Log.e(TAG, &quot; AWSMobileClient.getInstance().getAWSCredentials()=&quot; +
+                    AWSMobileClient.getInstance().getAWSCredentials());
+            Log.e(TAG, &quot; AWSMobileClient.getInstance().getConfiguration()=&quot; +
+                    AWSMobileClient.getInstance().getConfiguration());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Intent intent = new Intent(AuthActivity.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    private void showSignIn() {
+        try {
+            finish();
+            AWSMobileClient.getInstance().showSignIn(this,
+                    SignInUIOptions.builder().logo(R.drawable.devday).backgroundColor(Color.BLUE).//hostedUIOptions()
+                            nextActivity(MainActivity.class).build());//, lisenercallback);
+        } catch (Exception e) {
+            Log.e(TAG, &quot;Show singIN&quot; + e.toString());
+        }
+    }
+ 
 
 }
 
 </code></pre>
 
-<p>Now let&rsquo;s run the code.</p>
+<p>AndroidManifest.xml 파일을 수정합니다. 기존의 MAIN action과 LAUNCHER category를 가지고 있던  MainActivity의 속성을 제거하시고  AuthActivity 에 제거된 속성을 부여합니다. 아래 코드를 참고하세요.</p>
 
-<p>Press <strong>Run</strong> button at the top of your Android Studio IDE to run the application with the emulator you have already created.
+<pre><code class="language-xml">&lt;activity android:name=&quot;.AuthActivity&quot;&gt;
+    &lt;intent-filter&gt;
+        &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;
+
+        &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+    &lt;/intent-filter&gt;
+&lt;/activity&gt;
+&lt;activity android:name=&quot;.MainActivity&quot; /&gt;
+</code></pre>
+
+<p>안드로이드 스튜디오 프로젝트 상단에 <strong>실행버튼</strong> 을 눌러 이미 생성하신 에뮬레이터로 어플리케이션을 실행합니다.
 <img src="../../../images/run.png" alt="c9after" /></p>
 
-<p>When the following screen appears, click the <strong>Email login</strong> text to go to the email-based login menu.
-<img src="../../../images/amplify-auth-login-main.png" alt="Example Service" /></p>
+<p>실행된 화면은 다음과 같습니다.
+<img src="../../../images/signin.png" alt="c9after" /></p>
 
-<p>Log in with the user information used in the previous tutorial.
-<img src="../../../images/app-login.png" alt="Example Service" /></p>
+<p>가입을 합니다. 이때 비밀번호의 경우 대문자와 특수문자가 포함된 8자리 이상으로 구성되어야 합니다.</p>
 
-<p>If registration is successful, the page will be moved to the main screen of the app.
-<img src="../../../images/app-main-empty.png" alt="Example Service" /></p>
+<p><img src="../../../images/signup.png" alt="c9after" /></p>
+
+<p>가입시 적은 이메일을 통해 컨펌 번호를 입력하시면 가입이 완료됩니다.</p>
+
+<p><img src="../../../images/confirm.png" alt="c9after" /></p>
+
+<p>가입시 적은 이메일을 통해 컨펌 번호를 입력하시면 가입이 완료됩니다.</p>
+
+<p><img src="../../../images/confirm.png" alt="c9after" /></p>
+
+<p><b>AWS console &gt; service &gt; Cognito &gt; user pool &gt; </b>를 통해 새로운 사용자가 등록된 것을 확인 하실 수 있습니다.</p>
+
+<p><img src="../../../images/cognitouser.png" alt="c9after" /></p>
 
 
 <footer class=" footline" >
@@ -1270,22 +1153,6 @@ public class LoginActivity extends AppCompatActivity implements Validator.Valida
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1547,134 +1414,6 @@ public class LoginActivity extends AppCompatActivity implements Validator.Valida
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
             
         
 
@@ -1682,10 +1421,10 @@ public class LoginActivity extends AppCompatActivity implements Validator.Valida
 
 
         
-            <a class="nav nav-prev" href="../../../socialapp/cognito/cognito-auth-email/" title="Implementing e-mail based signup"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="../../../socialapp/cognito/amplify-cognito/" title="Amazon Cognito Service 만들기"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="../../../socialapp/appsync/" title="Create a social post repository" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="../../../socialapp/appsync/" title="소셜 게시물 저장소 만들기" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -1694,20 +1433,20 @@ public class LoginActivity extends AppCompatActivity implements Validator.Valida
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1578860129"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1578860129"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1578860129"></script>
-    <script src="../../../js/jquery.sticky.js?1578860129"></script>
-    <script src="../../../js/featherlight.min.js?1578860129"></script>
-    <script src="../../../js/html5shiv-printshiv.min.js?1578860129"></script>
-    <script src="../../../js/highlight.pack.js?1578860129"></script>
+    <script src="../../../js/clipboard.min.js?1568599817"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1568599817"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1568599817"></script>
+    <script src="../../../js/jquery.sticky.js?1568599817"></script>
+    <script src="../../../js/featherlight.min.js?1568599817"></script>
+    <script src="../../../js/html5shiv-printshiv.min.js?1568599817"></script>
+    <script src="../../../js/highlight.pack.js?1568599817"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1578860129"></script>
-    <script src="../../../js/learn.js?1578860129"></script>
-    <script src="../../../js/hugo-learn.js?1578860129"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1568599817"></script>
+    <script src="../../../js/learn.js?1568599817"></script>
+    <script src="../../../js/hugo-learn.js?1568599817"></script>
 
-    <link href="../../../mermaid/mermaid.css?1578860129" type="text/css" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.min.js?1578860129"></script>
+    <link href="../../../mermaid/mermaid.css?1568599817" type="text/css" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.min.js?1568599817"></script>
     <script>
 	var config = {
         startOnLoad:true,

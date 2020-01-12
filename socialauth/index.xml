@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Login (Additional) on AWS Android Social HoL</title>
+    <link>/socialauth/</link>
+    <description>Recent content in Social Login (Additional) on AWS Android Social HoL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    <lastBuildDate>Tue, 07 Aug 2018 08:30:11 -0700</lastBuildDate>
+    
+	<atom:link href="/socialauth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring Facebook OAuth</title>
+      <link>/socialauth/facebook_config/</link>
+      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
+      
+      <guid>/socialauth/facebook_config/</guid>
+      <description>In this tutorial, we&amp;rsquo;re going to set up OAuth configurations on the Facebook developer site to support Facebook login.
+In the lab, we will configure OAuth2.0 integration using the Hosted UI method provided by Amazon Cognito. With this method, we can implement social login without installing Facebook SDK.
+ Create a developer account in Facebook developer portal. Log in to the Facebook developer site using own Facebook account. Select a &amp;lsquo;Create App&amp;rsquo; in &amp;lsquo;My Apps&amp;rsquo; menu.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Amazon Cognito Service</title>
+      <link>/socialauth/amplify-cognito/</link>
+      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
+      
+      <guid>/socialauth/amplify-cognito/</guid>
+      <description>Amazon Cognito allows you to quickly and easily add user sign-up, sign-in, and access control to your mobile app.
+Run the following command from the top level of your Android project.
+amplify auth update  Please refer to the picture below for the selection in progress.
+When setting the domain name, names including aws, amazon, cognito, and _ cannot be used. You should enter the name in the form of &amp;lsquo;android-workshop&amp;rsquo; + &amp;lsquo;random text&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Implementing social login</title>
+      <link>/socialauth/facebook_login/</link>
+      <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
+      
+      <guid>/socialauth/facebook_login/</guid>
+      <description>In this tutorial, we will implement Facebook-based social login using Cognito&amp;rsquo;s Hosted UI feature.
+With Hosted UI feature, OAuth2 authentication is done between servers, so we do not need to install a mobile SDK provided by Facebook. Currently, supporting Identity Providers are Facebook, Google, and Amazon.
+Copy the code below to complete the _ openFacebookLogin method for adding Hosted UI functionality for Facebook login.
+// AuthMainActivity.java public class AuthMainActivity extends AppCompatActivity { .</description>
+    </item>
+    
+  </channel>
+</rss>

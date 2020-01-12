@@ -34,7 +34,17 @@
   </url>
   
   <url>
+    <loc>/socialauth/facebook_config/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/socialapp/cognito/amplify-cognito/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialauth/amplify-cognito/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
@@ -63,6 +73,11 @@
   
   <url>
     <loc>/socialapp/appsync/android-appsync/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/socialauth/facebook_login/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
@@ -145,6 +160,11 @@
   
   <url>
     <loc>/devicefarm/</loc>
+  </url>
+  
+  <url>
+    <loc>/socialauth/</loc>
+    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
   <url>
